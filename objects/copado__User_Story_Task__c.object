@@ -141,7 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>copado__User_Story_Task_compact_Layout</compactLayoutAssignment>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>copado__User_Story_Task_compact_Layout</fullName>
         <fields>Name</fields>
@@ -272,16 +272,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>User Story Tasks</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>copado__Subject__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__User_Story__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Comments__c</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>copado__Subject__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__User_Story__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Comments__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

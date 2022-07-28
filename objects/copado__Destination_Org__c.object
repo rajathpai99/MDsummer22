@@ -330,15 +330,15 @@ copado__SUM_Deployed__c / copado__Step_Count__c,
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <label>Destination Credential</label>
+    <label>Destination Org</label>
     <nameField>
         <displayFormat>DO-{0000}</displayFormat>
-        <label>Destination Credential Number</label>
+        <label>Destination Org Number</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Destination Credentials</pluralLabel>
-    <searchLayouts/>
+    <pluralLabel>Destination Orgs</pluralLabel>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

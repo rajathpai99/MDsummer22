@@ -141,7 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>copado__Application_Highlight_Panel</compactLayoutAssignment>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>copado__Application_Highlight_Panel</fullName>
         <fields>Name</fields>
@@ -311,18 +311,7 @@ CASE( copado__Stability__c,
         <type>Text</type>
     </nameField>
     <pluralLabel>Applications</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>copado__Release_Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Stability__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Stability_Icon__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Parent_Application__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Product_Manager__c</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>copado__Release_Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Stability__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Stability_Icon__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Parent_Application__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Product_Manager__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>

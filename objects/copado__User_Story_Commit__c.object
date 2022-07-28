@@ -253,7 +253,7 @@ IF(CONTAINS(copado__User_Story__r.copado__Project__r.copado__Deployment_Flow__r.
         <type>Text</type>
     </nameField>
     <pluralLabel>User Story Commits</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

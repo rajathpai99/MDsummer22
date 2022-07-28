@@ -141,7 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>copado__Epic_Highlight_Panel</compactLayoutAssignment>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>copado__Epic_Highlight_Panel</fullName>
         <fields>copado__Epic_Title__c</fields>
@@ -301,10 +301,10 @@
     <pluralLabel>Epics</pluralLabel>
     <searchLayouts>
         <customTabListAdditionalFields>copado__Epic_Title__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>copado__Epic_Details__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>copado__Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Release__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Application__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>OWNER.FIRST_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
         <excludedStandardButtons>Accept</excludedStandardButtons>
         <lookupDialogsAdditionalFields>copado__Epic_Title__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__Epic_Details__c</lookupDialogsAdditionalFields>
@@ -314,10 +314,10 @@
         <searchFilterFields>copado__Epic_Title__c</searchFilterFields>
         <searchFilterFields>NAME</searchFilterFields>
         <searchResultsAdditionalFields>copado__Epic_Title__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>copado__Epic_Details__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Release__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Application__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>OWNER.FIRST_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
