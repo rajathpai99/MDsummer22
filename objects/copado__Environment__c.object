@@ -651,7 +651,6 @@
         <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
         <searchFilterFields>NAME</searchFilterFields>
         <searchFilterFields>copado__Org_ID__c</searchFilterFields>
-        <searchResultsAdditionalFields>copado__Platform__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Type__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Minimum_Apex_Test_Coverage__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Org_ID__c</searchResultsAdditionalFields>

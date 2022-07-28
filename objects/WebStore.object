@@ -100,7 +100,7 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>Read</externalSharingModel>
     <fields>
         <fullName>DefaultLanguage</fullName>
         <inlineHelpText>The language to use when translated content isn&apos;t available. This value comes from the first supported language for your org in Translation Workbench.</inlineHelpText>
@@ -141,6 +141,6 @@
         <fullName>SupportedLanguages</fullName>
         <inlineHelpText>The languages to make available to buyers. Language options come from Translation Workbench.</inlineHelpText>
     </fields>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

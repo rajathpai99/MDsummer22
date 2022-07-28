@@ -141,7 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>copado__Credential_Compact_Layout</compactLayoutAssignment>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>copado__Credential_Compact_Layout</fullName>
         <fields>Name</fields>
@@ -851,7 +851,7 @@ IMAGE(&apos;/resource/1516617568000/&apos;+IF($Setup.copado__Settings__c.copado_
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-    <label>Credential</label>
+    <label>Org Credential</label>
     <listViews>
         <fullName>copado__All</fullName>
         <columns>NAME</columns>
@@ -869,11 +869,11 @@ IMAGE(&apos;/resource/1516617568000/&apos;+IF($Setup.copado__Settings__c.copado_
         <language>en_US</language>
     </listViews>
     <nameField>
-        <label>Credential Name</label>
+        <label>Org Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Credentials</pluralLabel>
+    <pluralLabel>Org Credentials</pluralLabel>
     <searchLayouts>
         <customTabListAdditionalFields>copado__Org_Type__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>copado__Username__c</customTabListAdditionalFields>
@@ -886,7 +886,6 @@ IMAGE(&apos;/resource/1516617568000/&apos;+IF($Setup.copado__Settings__c.copado_
         <lookupDialogsAdditionalFields>copado__Username__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__Validated_Date__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CREATEDBY_USER</lookupDialogsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Environment__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Org_Type__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Username__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Validated_Date__c</searchResultsAdditionalFields>

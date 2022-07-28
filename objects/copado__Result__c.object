@@ -156,7 +156,7 @@
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -601,7 +601,6 @@ IF( !ISBLANK(copado__JobStep__c), copado__JobStep__r.Name,
     <nameField>
         <displayFormat>R{00000}</displayFormat>
         <label>Result Name</label>
-        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Results</pluralLabel>

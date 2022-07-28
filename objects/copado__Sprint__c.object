@@ -141,7 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>copado__Sprint_Compact_Layout</compactLayoutAssignment>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>copado__Sprint_Compact_Layout</fullName>
         <fields>Name</fields>
@@ -427,15 +427,11 @@
     </nameField>
     <pluralLabel>Sprints</pluralLabel>
     <searchLayouts>
+        <customTabListAdditionalFields>copado__Project__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>copado__Release__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>copado__Start_Date__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>copado__End_Date__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>copado__Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Working_Days_Left__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Release__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Team__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Project__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>OWNER.FIRST_NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Objective__c</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>copado__Project__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__Release__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__Start_Date__c</lookupDialogsAdditionalFields>
@@ -447,15 +443,11 @@
         <searchFilterFields>copado__Start_Date__c</searchFilterFields>
         <searchFilterFields>copado__End_Date__c</searchFilterFields>
         <searchFilterFields>copado__Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>copado__Project__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>copado__Release__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Start_Date__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__End_Date__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Working_Days_Left__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Release__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Team__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Project__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>OWNER.FIRST_NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Objective__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
