@@ -2,6 +2,7 @@
 package.xml
 
 classes/copado__*
+classes/copadoconnect__*
 components/copado__*
 flows/copado__*
 staticresources/copado__*
