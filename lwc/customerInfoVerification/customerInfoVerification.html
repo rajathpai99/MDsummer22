@@ -1,0 +1,165 @@
+<template>
+    <!-- Comment Staging 26-Jan-2023 -->
+    <lightning-layout>
+        <lightning-layout-item size="12" medium-device-size="6" small-device-size="12">
+            <template if:false={isInitialized}>
+                <div class="slds-p-around_large">
+                    <c-helpertext-spinner helper-text={spinnerMessage}></c-helpertext-spinner>
+                </div>
+            </template>
+            <template if:true={isLoading}>
+                <lightning-spinner variant="brand" size="medium"></lightning-spinner>
+            </template>
+            <template if:false={showAddressValidation}>
+            <template if:true={isInitialized}>
+                <div class="slds-m-around_medium">
+                    <h1 class="titleText"><strong>{accountName}</strong></h1>
+                    <h2>Customer #: {mmbCustomerNumber}</h2>
+                    <h3>Site #: {mmbSiteNumber}</h3>
+    </div>
+    <template if:true={isEditable}>
+        <form data-form-id="1">
+                            <lightning-button class="slds-m-around_medium" onclick={handleSave} variant="brand"
+                                label="Save" data-id="saveBtn">
+            </lightning-button>
+            <lightning-accordion allow-multiple-sections-open active-section-name={activeSections}>
+                <lightning-accordion-section name="A" label="General Information">
+                    <div class="slds-m-around_medium">
+                        <lightning-input label="Email" pattern="[A-Za-z0-9._-]+@[a-z0-9-]+\.[a-z]{2,}$"
+                                        message-when-pattern-mismatch="Please enter a valid email" required
+                                            value={email} name="email" onblur={generalInformationChange}
+                                            data-id="email">
+                                    </lightning-input>
+                                    <lightning-input label="Cross Street" value={crossStreet} name="crossstreet"
+                                            onblur={generalInformationChange} max-length="60">
+                                        </lightning-input>
+                                        <lightning-input label="Subdivision" value={subDivision} name="subdivision"
+                                            onblur={generalInformationChange} max-length="30">
+                        </lightning-input>
+                    </div>
+                </lightning-accordion-section>
+                <lightning-accordion-section name="B" label="Phones">
+                    <div class="slds-m-around_medium">
+                        <div class="slds-grid slds-gutters">
+                                            <c-sfs_phone-number-extension-input phone-number-label="Customer Phone 1"
+                                                extension-label="ext" phone-number-value={customerPhone1}
+                                                extension-value={extensionCustomerPhone1} phone-number-required="true"
+                                                phone-number-data-id="customer1" extension-data-id="customer1ext"
+                                                phone-number-data-name="c1" extension-data-name="c1ext"
+                                                oninputupdate={handleBlur}>
+                                            </c-sfs_phone-number-extension-input>
+                                        </div>
+                                        <div class="slds-grid slds-gutters">
+                                            <c-sfs_phone-number-extension-input phone-number-label="Customer Phone 2"
+                                                extension-label="ext" phone-number-value={customerPhone2}
+                                                extension-value={extensionCustomerPhone2}
+                                                phone-number-data-id="customer2" extension-data-id="customer2ext"
+                                                phone-number-data-name="c2" extension-data-name="c2ext"
+                                                oninputupdate={handleBlur}>
+                                            </c-sfs_phone-number-extension-input>
+                        </div>
+                    </div>
+                    <div class="slds-m-around_medium">
+                        <div class="slds-grid slds-gutters">
+                                            <c-sfs_phone-number-extension-input phone-number-label="Site Phone 1"
+                                                extension-label="ext" phone-number-value={sitePhone1}
+                                                extension-value={extensionSitePhone1} phone-number-required="true"
+                                                phone-number-data-id="site1" extension-data-id="site1ext"
+                                                phone-number-data-name="s1" extension-data-name="s1ext"
+                                                oninputupdate={handleBlur}>
+                                            </c-sfs_phone-number-extension-input>
+                                        </div>
+                                        <div class="slds-grid slds-gutters">
+                                            <c-sfs_phone-number-extension-input phone-number-label="Site Phone 2"
+                                                extension-label="ext" phone-number-value={sitePhone2}
+                                                extension-value={extensionSitePhone2} phone-number-data-id="site2"
+                                                extension-data-id="site2ext" phone-number-data-name="s2"
+                                                extension-data-name="s2ext" oninputupdate={handleBlur}>
+                                            </c-sfs_phone-number-extension-input>
+                        </div>
+                    </div>
+                </lightning-accordion-section>
+                <lightning-accordion-section name="C" label="Site Address">
+                    <ol>
+                        <li>
+                            <strong>Street:</strong> {siteStreet}
+                        </li>
+                        <li>
+                            <strong>City:</strong> {siteCity}
+                        </li>
+                        <li>
+                            <strong>State:</strong> {siteState}
+                        </li>
+                        <li>
+                            <strong>Zip/PostalCode:</strong> {sitePostalCode}
+                        </li>
+                        <li>
+                            <strong>County:</strong> {siteCounty}
+                        </li>
+                    </ol>
+                </lightning-accordion-section>
+                <lightning-input class="slds-m-around_medium" type="checkbox"
+                                    label="Billing address same as site address" value={sameAddress}
+                                    checked={sameAddress} onclick={toggleAddressCheckbox} data-id="addressCheckbox">
+                </lightning-input>
+                <template if:false={sameAddress}>
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_2-of-3">
+                            <ol>
+                                <li>
+                                    <lightning-input label="Billing Street" value={billingStreet}
+                                                        onchange={handleBillingStreetInput}></lightning-input>
+                                                </li>
+                                                <li>
+                                                    <lightning-input label="Billing City" value={billingCity}
+                                                        onchange={handleBillingCityInput}>
+                                    </lightning-input>
+                                </li>
+                                <li>
+                                    <lightning-input label="Billing State" value={billingState}
+                                                        onchange={handleBillingStateInput}>
+                                    </lightning-input>
+                                </li>
+                                <li>
+                                                    <lightning-input label="Billing Postal Code"
+                                                        value={billingPostalCode}
+                                                        onchange={handleBillingPostalCodeInput}>
+                                    </lightning-input>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </template>
+                <ol class="slds-m-around_medium">
+                    <li>
+                                    <strong>Agency:</strong> {agency}
+                                </li>
+                                <li>
+                                    <strong>Permit Number:</strong> {permitNumber}
+                    </li>
+                </ol>
+            </lightning-accordion>
+        </form>
+    </template>
+    <template if:false={isEditable}>
+                    <c-customer-info-verification-read-only active-sections={activeSections} email={email}
+                        cross-street={crossStreet} sub-division={subDivision} customer-phone1={customerPhone1}
+                        customer-phone2={customerPhone2} extension-customer-phone1={extensionCustomerPhone1}
+                        extension-customer-phone2={extensionCustomerPhone2} site-phone1={sitePhone1}
+                        extension-site-phone1={extensionSitePhone1} site-phone2={sitePhone2}
+                        extension-site-phone2={extensionSitePhone2} site-street={siteStreet} site-city={siteCity}
+                        site-state={siteState} site-postal-code={sitePostalCode} site-county={siteCounty}
+                        billing-street={billingStreet} billing-city={billingCity} billing-state={billingState}
+                        billing-postal-code={billingPostalCode} agency={agency} permit-number={permitNumber}>
+                    </c-customer-info-verification-read-only>
+                </template>
+            </template>
+            </template>
+            <template if:true={showAddressValidation}>
+                <c-sfs_-billing-address-validation address-line1={billingStreet} city={billingCity} state={billingState}
+                    postal-code={billingPostalCode} onaddressvalidated={handleValidatedAddress}>
+                </c-sfs_-billing-address-validation>
+            </template>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
