@@ -515,7 +515,7 @@
     <fields>
         <fullName>test_2__c</fullName>
         <externalId>false</externalId>
-        <label>test 234</label>
+        <label>test 2</label>
         <length>10</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
