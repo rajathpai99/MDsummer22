@@ -512,19 +512,6 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>test_2__c</fullName>
-        <description>test desc</description>
-        <externalId>false</externalId>
-        <inlineHelpText>help text</inlineHelpText>
-        <label>test 2</label>
-        <length>10</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
     <listViews>
         <fullName>AllAccounts</fullName>
         <filterScope>Everything</filterScope>
