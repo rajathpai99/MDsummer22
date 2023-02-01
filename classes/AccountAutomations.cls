@@ -6,14 +6,12 @@ public class AccountAutomations {
             return a;
         }
     }
-    //Comment v1
     public static Account setDefaultBillingAddress(Account a){
         a.billingstreet = 'Basauri, 6'; 
         a.billingstate = 'Madrid'; 
         a.billingpostalcode ='28023'; 
         return a;
     }
-    //Comment v2
     public static Account setDefaultShippingAddress(Account a){
         a.shippingstreet = 'Basauri, 6'; 
         a.shippingstate = 'Madrid';
@@ -21,9 +19,8 @@ public class AccountAutomations {
         return a;
     }
     public static Account setDefaultPhone(Account a) {
-        if(a.name != 'Test'){
+        
             a.Phone='688456789';
-        }
         return a;
     }
     public static Account setDefaultURL(Account a) {
