@@ -10,11 +10,6 @@
         <field>Task.to_be_deleted_v1__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>test_obj_1__c.to_be_deleted__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Test Perm Set</label>
     <objectPermissions>
