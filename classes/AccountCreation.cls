@@ -3,7 +3,6 @@ public class AccountCreation {
         try{
         List<Account> accList= new List<Account>();
         for( Integer i=0 ; i<20 ; i++ ) {
-            //Staging cflct version3
             Account acc=new Account();
             acc.Name = 'PaiCopa'+i+'Rajath';
             acc.Fax = '123paicopa';
