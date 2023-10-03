@@ -3,6 +3,7 @@ public class AccountCreation {
         try{
         List<Account> accList= new List<Account>();
         for( Integer i=0 ; i<20 ; i++ ) {
+            //Create 20 account records through iteration
             Account acc=new Account();
             acc.Name = 'PaiCopa'+i+'Rajath';
             acc.Fax = '123paicopa';
