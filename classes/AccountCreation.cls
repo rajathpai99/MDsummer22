@@ -6,7 +6,7 @@ public class AccountCreation {
             //Create 20 account records through iteration
             Account acc=new Account();
             acc.Name = 'PaiCopa'+i+'Rajath';
-            acc.Fax = '123paicopa';
+            acc.Fax = '2024paicopa';
             acc.Website='https://trailhead.salesforce.com';
             accList.add(acc);
         }
